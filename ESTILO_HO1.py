@@ -10,6 +10,7 @@ print(f"The length of the word {word} is {word_len}.")
 print(num_list)
 
 aver = sum(num_list) / len(num_list)
+print(f"The average of all numbers is {aver}")
 
 if word_len > aver:
   print(f"The length of the word {word} is greater than the average.")
