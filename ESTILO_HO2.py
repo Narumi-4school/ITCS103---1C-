@@ -6,7 +6,7 @@ window.resizable(False,False)
 window.configure(bg="lightblue")
 
 label = tk.Label(window,text="Student Profile",      
-font=("Arial", 16), fg="Black",     
+font=("Arial", 16, "bold"), fg="Black",     
 bg="lightblue",  width=20,height=2,anchor="center")
 
 label.pack(side="top", padx=10, pady=20, fill="x",
