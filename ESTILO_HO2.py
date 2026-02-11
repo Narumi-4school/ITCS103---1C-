@@ -1,6 +1,7 @@
 import tkinter as tk 
 
 window = tk.Tk()
+window.title("Dwyane Estilo's Profile")
 window.geometry("400x500")
 window.resizable(False,False)
 window.configure(bg="lightblue")
