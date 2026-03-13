@@ -45,16 +45,16 @@ def divide():
     result_label.config(text=f"The division of {num1} and {num2} is {num1/num2}")
 
 # button commands 
-b_add = tk.Button(frame, text="Add", width=10, command=add)
+b_add = tk.Button(frame, text="Add",relief="raised",width=10, command=add)
 b_add.grid(row=2, column=0, pady=10)
 
-b_sub = tk.Button(frame, text="Subtract", width=10, command=subtract)
+b_sub = tk.Button(frame, text="Subtract",relief="raised",width=10, command=subtract)
 b_sub.grid(row=2, column=1, pady=10)
 
-b_mul = tk.Button(frame, text="Multiply", width=10, command=multiply)
+b_mul = tk.Button(frame, text="Multiply", relief="raised",width=10, command=multiply)
 b_mul.grid(row=3, column=0, pady=10)
 
-b_div = tk.Button(frame, text="Division", width=10, command=divide)
+b_div = tk.Button(frame, text="Division",relief="raised",width=10, command=divide)
 b_div.grid(row=3, column=1, pady=10)
 
 window.mainloop()
