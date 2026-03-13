@@ -11,11 +11,11 @@ frame = tk.Frame(window, bg="lightblue", padx=20, pady=20)
 frame.pack()
 
 # Number entry request frame 
-num1 = tk.Label(frame, text="Enter 1st Number:")
-num1.grid(row=0, column=0, padx=10, pady=10)
+num_1 = tk.Label(frame, text="Enter 1st Number:")
+num_1.grid(row=0, column=0, padx=10, pady=10)
 
-num2 = tk.Label(frame, text="Enter 2nd Number:")
-num2.grid(row=1, column=0, padx=10, pady=10)
+num_2 = tk.Label(frame, text="Enter 2nd Number:")
+num_2.grid(row=1, column=0, padx=10, pady=10)
 
 entry1 = tk.Entry(frame)
 entry1.grid(row=0, column=1, padx=10)
