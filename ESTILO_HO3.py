@@ -46,7 +46,7 @@ def divide():
 
 # button commands 
 b_add = tk.Button(frame, text="Add", width=10, command=add)
-btn_add.grid(row=2, column=0, pady=10)
+b_add.grid(row=2, column=0, pady=10)
 
 b_sub = tk.Button(frame, text="Subtract", width=10, command=subtract)
 b_sub.grid(row=2, column=1, pady=10)
