@@ -4,15 +4,13 @@ window = tk.Tk()
 window.title("Simple Calculator")
 window.geometry("400x250")
 
-
 result_label = tk.Label(window, text="Simple Calculator", font=("Times New Roman", 14))
 result_label.pack(pady=10)
-
 
 frame = tk.Frame(window, bg="lightblue", padx=20, pady=20)
 frame.pack()
 
-
+# Number entry request frame 
 num1 = tk.Label(frame, text="Enter 1st Number:")
 num1.grid(row=0, column=0, padx=10, pady=10)
 
@@ -46,17 +44,17 @@ def divide():
     num2 = int(entry2.get())
     result_label.config(text=f"The division is {num1/num2}")
 
-
-btn_add = tk.Button(frame, text="Add", width=10, command=add)
+# button commands 
+b_add = tk.Button(frame, text="Add", width=10, command=add)
 btn_add.grid(row=2, column=0, pady=10)
 
-btn_sub = tk.Button(frame, text="Subtract", width=10, command=subtract)
-btn_sub.grid(row=2, column=1, pady=10)
+b_sub = tk.Button(frame, text="Subtract", width=10, command=subtract)
+b_sub.grid(row=2, column=1, pady=10)
 
-btn_mul = tk.Button(frame, text="Multiply", width=10, command=multiply)
-btn_mul.grid(row=3, column=0, pady=10)
+b_mul = tk.Button(frame, text="Multiply", width=10, command=multiply)
+b_mul.grid(row=3, column=0, pady=10)
 
-btn_div = tk.Button(frame, text="Division", width=10, command=divide)
-btn_div.grid(row=3, column=1, pady=10)
+b_div = tk.Button(frame, text="Division", width=10, command=divide)
+b_div.grid(row=3, column=1, pady=10)
 
 window.mainloop()
