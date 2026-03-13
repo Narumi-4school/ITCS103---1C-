@@ -27,22 +27,22 @@ entry2.grid(row=1, column=1, padx=10)
 def add():
     num1 = int(entry1.get())
     num2 = int(entry2.get())
-    result_label.config(text=f"The sum of {num1} + {num2} is {num1+num2}")
+    result_label.config(text=f"The sum of {num1} and {num2} is {num1+num2}")
 
 def subtract():
     num1 = int(entry1.get())
     num2 = int(entry2.get())
-    result_label.config(text=f"The subtraction is {num1-num2}")
+    result_label.config(text=f"The subtraction of {num1} and {num2} is {num1-num2}")
 
 def multiply():
     num1 = int(entry1.get())
     num2 = int(entry2.get())
-    result_label.config(text=f"The multiplication is {num1*num2}")
+    result_label.config(text=f"The multiplication of {num1} and {num2} is {num1*num2}")
 
 def divide():
     num1 = int(entry1.get())
     num2 = int(entry2.get())
-    result_label.config(text=f"The division is {num1/num2}")
+    result_label.config(text=f"The division of {num1} and {num2} is {num1/num2}")
 
 # button commands 
 b_add = tk.Button(frame, text="Add", width=10, command=add)
