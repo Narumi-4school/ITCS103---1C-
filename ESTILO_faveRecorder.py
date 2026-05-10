@@ -7,13 +7,9 @@ sheet = workbook.active
 
 sheet.title = "Favorite People"
 
-
 sheet.append(["ID", "First Name", "Last Name", "Birth Year", "Age"])
 
-#current year (2026)
 cur_year = datetime.now().year
-
-#loop to ask for THREE persons info
 for i in range(1, 4):
 
     print("Enter information for person", i)
@@ -22,23 +18,23 @@ for i in range(1, 4):
     last_name = input("Last Name: ")
     birth_year = int(input("Birth Year: "))
 
-    #compute age
+    
     age = cur_year - birth_year
 
     person_id = i
 
-    #save data to excel
+    
     sheet.append([person_id, first_name, last_name, birth_year, age])
 
     print()
 
-#save excel file
+
 workbook.save("favorite_people.xlsx")
 
 print("Data saved to favorite_people.xlsx")
 print()
 
-#display all records
+
 print("Saved Records:")
 print("-----------------------------")
 
